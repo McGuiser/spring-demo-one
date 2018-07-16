@@ -21,5 +21,10 @@ public class BaseballCoach implements Coach{
 		// Use my fortuneService to get a fortune
 		return fortuneService.getFortune();
 	}
+
+	@Override
+	public String getRandomFortune() {
+		return fortuneService.getRandomFortune();
+	}
 	
 }

@@ -23,4 +23,9 @@ public class TrackCoach implements Coach {
 		return "Just Do It: " + fortuneService.getFortune();
 	}
 
+	@Override
+	public String getRandomFortune() {
+		return fortuneService.getRandomFortune();
+	}
+
 }

@@ -7,4 +7,10 @@ public class HappyFortuneService implements FortuneService {
 		return "Today is your lucky day!";
 	}
 
+	@Override
+	public String getRandomFortune() {
+		String[] fortunesArray = { "Today will be a good day.", "Don't step on cracks", "Eat your greens.", "Go you!" };
+		return fortunesArray[(int)(Math.random() * fortunesArray.length)];
+	}
+
 }
